@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "my-first-pubmed-project"
+version = "0.1.0"
+description = "CLI tool to extract non-academic papers from PubMed"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:app"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+click = "^8.1.8"
+lxml = "^5.3.2"
+markdown-it-py = "^3.0.0"
+mdurl = "^0.1.2"
+pygments = "^2.19.1"
+rich = "^14.0.0"
+shellingham = "^1.5.4"
+typer = "^0.15.2"
+
